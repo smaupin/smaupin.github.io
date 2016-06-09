@@ -26,23 +26,7 @@
     <link rel="stylesheet" href="css/creative.css" type="text/css">
 
     <!-- favicon links below -->
-    <link rel="apple-touch-icon" sizes="57x57" href="img/smaupin-favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/smaupin-favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/smaupin-favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/smaupin-favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/smaupin-favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/smaupin-favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/smaupin-favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/smaupin-favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/smaupin-favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="img/smaupin-favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/smaupin-favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/smaupin-favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/smaupin-favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/smaupin-favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="img/smaupin-favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -69,16 +53,35 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse software-side" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#about-sw">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#projects">Projects</a>
+                        <a class="page-scroll" href="#projects-sw">Projects</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#contact-sw">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse artwork-side" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about-aw">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#watercolor-aw">Watercolor</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#illustration-aw">Illustration</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#offshoots-aw">Offshoots</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact-aw">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -87,18 +90,29 @@
         <!-- /.container-fluid -->
     </nav>
 
+
     <header class="bg-header">
+        <div class="soft-or-art-btns pull-right">
+          <a href="#about" class="btn btn-primary btn-xl page-scroll">Software</a>
+          <a href="#about" class="btn btn-primary btn-xl page-scroll">Artwork</a>
+        </div>
         <div class="header-content">
-            <div class="header-content-inner">
+            <div class="header-content-inner software-side">
                 <h2>Hi, I'm Scot Maupin.</h2>
                 <hr>
                 <p>I'm a flexible full stack web developer and I enjoy creating new and efficient ways to solve problems digitally.</p>
-                <!-- <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a> -->
+            </div>
+            <div class="header-content-inner artwork-side">
+                <h2>Hi, I'm Scot Maupin.</h2>
+                <hr>
+                <p>I'm a painter and illustrator. You can check out some of my artwork below.</p>
             </div>
         </div>
     </header>
 
-    <section class="bg-primary" id="about">
+  <div class="software-side">
+
+    <section class="bg-primary" id="about-sw">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-sm-offset-2 text-center">
@@ -121,50 +135,7 @@
         </div>
     </section>
 
-    <!-- <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">At Your Service</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                        <h3>Sturdy Templates</h3>
-                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                        <h3>Ready to Ship</h3>
-                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                        <h3>Up to Date</h3>
-                        <p class="text-muted">We update dependencies to keep things fresh.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                        <h3>Made with Love</h3>
-                        <p class="text-muted">You have to make your websites with love these days!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <section class="no-padding bg-second" id="projects">
+    <section class="no-padding bg-second" id="projects-sw">
         <!-- Page Content -->
             <div class="container">
 
@@ -230,24 +201,17 @@
                 </div>
                 <!-- /.row -->
 
-                <hr class="long">
+                <br>
+
+                <!-- <hr class="long"> -->
 
             </div>
             <!-- /.container -->
        <!--  <br> -->
     </section>
 
-    <!-- <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>Free Download at Start Bootstrap!</h2>
-                <a href="#" class="btn btn-default btn-xl wow tada">Download Now!</a>
-            </div>
-        </div>
-    </aside> -->
-
-    <section id="contact" class="bg-third">
-        <div class="container">
+    <section id="contact-sw" class="bg-third">
+        <div class="container-sw">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Contact Scot:</h2>
@@ -284,30 +248,347 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-fourth">
-        <br>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <p>Copyright &copy; smaupin.com 2016</p>
+  </div>
+
+  <div class="artwork-side">
+
+    <section class="bg-primary" id="about-aw">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-offset-2 text-center">
+                    <h2 class="section-heading">About Scot:</h2>
+                    <hr class="light">
+                    <!-- <div class="row">
+                        <div class="col-sm-4"> -->
+                            <img id="headshot-blue" class="img-responsive img-circle" src="img/headshot-blue-sm.jpg" alt="">
+                        <!-- </div> -->
+                        <!-- <div class="col-sm-6 col-sm-offset-1 text-right"> -->
+                            <br>
+                            <div class="col-sm-6 col-sm-offset-3">
+                            <p class="text-faded">I'm a Software Developer with a background in illustration and design. I enjoy getting into code to make functional apps and programs, and I like to make them a pleasure to both view and use.</p>
+                        <!-- </div> -->
+
+                    
+                    <!-- <a href="#" class="btn btn-default btn-xl">Get Started!</a> -->
+                </div>
             </div>
         </div>
-        <!-- /.row -->
-    </footer>
+    </section>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <section class="no-padding bg-second" id="watercolor-aw">
+        <!-- Page Content -->
+            <div class="container">
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <br>
+                        <h2 class="section-heading text-center">Projects:</h2>
+                        <hr id="tan">
+                    </div>
+                </div>
+                <!-- /.row -->
 
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/wow.min.js"></script>
+                <!-- Project One -->
+                <div class="row">
+                    <div class="col-md-7">
+                        <a href="https://comparo.herokuapp.com/" target="_blank">
+                            <img class="img-responsive" src="img/portfolio/comparo-ss.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-5">
+                        <h3>Comparo</h3>
+                        <h4>Link Aggregator</h4>
+                        <p>     Comparo is a site I made to help users share lists of links from all corners of the internet together in one place. It is built in Express with NodeJS and Mongoose. Links can then be shared through email or social media to others who will get all the links in one place.</p>
+                        <a class="btn btn-primary" href="https://comparo.herokuapp.com/" target="_blank">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+                <!-- /.row -->
 
-    <!-- Custom Theme JavaScript -->
-    <script src="js/creative.js"></script>
+                <hr class="long">
+
+                <!-- Project Two -->
+                <div class="row">
+                    <div class="col-md-7">
+                        <a href="http://metropolist.herokuapp.com/" target="_blank">
+                            <img class="img-responsive" src="img/portfolio/metropolist-ss.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-5">
+                        <h3>Metropolist</h3>
+                        <h4>Travel App</h4>
+                        <p>     Metropolist is a site for travelers in major cities to post and read tips from other travelers or locals in that city. Users are able to make city-specific posts themselves or reference others' posts organized either by the city or the user.</p>
+                        <a class="btn btn-primary" href="http://metropolist.herokuapp.com/" target="_blank">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <hr class="long">
+
+                <!-- Project Three -->
+                <div class="row">
+                    <div class="col-md-7">
+                        <a href="http://fillinthe.herokuapp.com/" target="_blank">
+                            <img class="img-responsive" src="img/portfolio/fillinthe-ss.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-5">
+                        <h3>FillinThe</h3>
+                        <h4>Memory Aid</h4>
+                        <p>FillinThe is a site that make quizzes from text, and then displays a quiz either with selected keywords or random words removed. The user must then fill in those blanks correctly to pass the quiz. I wrote the javascript engine that runs that process. I presented this project and walked through the code to an audience of fellow developers.</p>
+                        <a class="btn btn-primary" href="http://fillinthe.herokuapp.com/" target="_blank">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <br>
+
+            </div>
+            <!-- /.container -->
+       <!--  <br> -->
+    </section>
+
+    <section class="no-padding bg-second" id="illustration-aw">
+        <!-- Page Content -->
+            <div class="container">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <br>
+                        <h2 class="section-heading text-center">Projects:</h2>
+                        <hr id="tan">
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <!-- Project One -->
+                <div class="row">
+                    <div class="col-md-7">
+                        <a href="https://comparo.herokuapp.com/" target="_blank">
+                            <img class="img-responsive" src="img/portfolio/comparo-ss.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-5">
+                        <h3>Comparo</h3>
+                        <h4>Link Aggregator</h4>
+                        <p>     Comparo is a site I made to help users share lists of links from all corners of the internet together in one place. It is built in Express with NodeJS and Mongoose. Links can then be shared through email or social media to others who will get all the links in one place.</p>
+                        <a class="btn btn-primary" href="https://comparo.herokuapp.com/" target="_blank">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <hr class="long">
+
+                <!-- Project Two -->
+                <div class="row">
+                    <div class="col-md-7">
+                        <a href="http://metropolist.herokuapp.com/" target="_blank">
+                            <img class="img-responsive" src="img/portfolio/metropolist-ss.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-5">
+                        <h3>Metropolist</h3>
+                        <h4>Travel App</h4>
+                        <p>     Metropolist is a site for travelers in major cities to post and read tips from other travelers or locals in that city. Users are able to make city-specific posts themselves or reference others' posts organized either by the city or the user.</p>
+                        <a class="btn btn-primary" href="http://metropolist.herokuapp.com/" target="_blank">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <hr class="long">
+
+                <!-- Project Three -->
+                <div class="row">
+                    <div class="col-md-7">
+                        <a href="http://fillinthe.herokuapp.com/" target="_blank">
+                            <img class="img-responsive" src="img/portfolio/fillinthe-ss.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-5">
+                        <h3>FillinThe</h3>
+                        <h4>Memory Aid</h4>
+                        <p>FillinThe is a site that make quizzes from text, and then displays a quiz either with selected keywords or random words removed. The user must then fill in those blanks correctly to pass the quiz. I wrote the javascript engine that runs that process. I presented this project and walked through the code to an audience of fellow developers.</p>
+                        <a class="btn btn-primary" href="http://fillinthe.herokuapp.com/" target="_blank">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <br>
+
+            </div>
+            <!-- /.container -->
+       <!--  <br> -->
+    </section>
+
+    <section class="no-padding bg-second" id="offshoots-aw">
+        <!-- Page Content -->
+            <div class="container">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <br>
+                        <h2 class="section-heading text-center">Projects:</h2>
+                        <hr id="tan">
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <!-- Project One -->
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a href="#illustrationModal1" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus-circle fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/BPD-IL-RT-BPD.jpg" class="img-responsive" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Pinecone Bomb Logo</h4>
+                            <p class="text-muted">Pinecone With Fuse    </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <hr class="long">
+
+                <!-- Project Two -->
+                <div class="row">
+                    <div class="col-md-7">
+                        <a href="http://metropolist.herokuapp.com/" target="_blank">
+                            <img class="img-responsive" src="img/portfolio/metropolist-ss.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-5">
+                        <h3>Metropolist</h3>
+                        <h4>Travel App</h4>
+                        <p>     Metropolist is a site for travelers in major cities to post and read tips from other travelers or locals in that city. Users are able to make city-specific posts themselves or reference others' posts organized either by the city or the user.</p>
+                        <a class="btn btn-primary" href="http://metropolist.herokuapp.com/" target="_blank">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <hr class="long">
+
+                <!-- Project Three -->
+                <div class="row">
+                    <div class="col-md-7">
+                        <a href="http://fillinthe.herokuapp.com/" target="_blank">
+                            <img class="img-responsive" src="img/portfolio/fillinthe-ss.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-5">
+                        <h3>FillinThe</h3>
+                        <h4>Memory Aid</h4>
+                        <p>FillinThe is a site that make quizzes from text, and then displays a quiz either with selected keywords or random words removed. The user must then fill in those blanks correctly to pass the quiz. I wrote the javascript engine that runs that process. I presented this project and walked through the code to an audience of fellow developers.</p>
+                        <a class="btn btn-primary" href="http://fillinthe.herokuapp.com/" target="_blank">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <br>
+
+            </div>
+            <!-- /.container -->
+       <!--  <br> -->
+    </section>
+
+    <section id="contact-aw" class="bg-third">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Contact Scot:</h2>
+                    <hr class="primary">
+                    <p>I can be reached most easily through email,</p>
+                    <p>or through any of the other links below.</p>
+                    <br>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <a href="mailto:scotmaupin@gmail.com">
+                        <i class="fa fa-envelope fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                        <p>scotmaupin@gmail.com</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <a href="https://twitter.com/scotmaupin">
+                        <i class="fa fa-twitter fa-3x wow bounceIn"></i>
+                        <p>@scotmaupin</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <a href="https://github.com/smaupin">
+                        <i class="fa fa-github fa-3x wow bounceIn"></i>
+                        <p>github.com/smaupin</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <a href="https://www.linkedin.com/in/scotmaupin">
+                        <i class="fa fa-linkedin-square fa-3x wow bounceIn"></i>
+                        <p>scotmaupin</p>
+                    </a>
+                </div>                
+            </div>
+        </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-fourth">
+      <br>
+      <div class="row">
+          <div class="col-lg-12 text-center">
+              <p>Copyright &copy; smaupin.com 2016</p>
+          </div>
+      </div>
+      <!-- /.row -->
+  </footer>
+
+<!-- Modal attempt -->
+  
+  <!-- Illustration Modal 1 BPD-->
+  <div class="portfolio-modal modal fade" id="illustrationModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                  <div class="rl">
+                  </div>
+              </div>
+          </div>
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2">
+                      <div class="modal-body">
+                          <!-- Project Details Go Here -->
+                          <h2>Pinecone Bomb Logo</h2>
+                          <p class="item-intro text-muted">Pinecone With Fuse</p>
+                          <img class="img-responsive img-centered" src="img/BPD-logo-cone-only-225.png" alt="">
+                          <p>The logo for BadPine is a one-color pinecone with a lit-fuse. It's available in a <a href="http://www.redbubble.com/people/badpine/works/11207395-bad-pine-pinecone-bomb-logo">variety applications.</a> My favorite are, of course, <a href="http://www.redbubble.com/people/badpine/works/11207395-bad-pine-pinecone-bomb-logo?p=leggings">the leggings.</a></p>
+                          <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Description</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/jquery.fittext.js"></script>
+  <script src="js/wow.min.js"></script>
+
+  <!-- Custom Theme JavaScript -->
+  <script src="js/creative.js"></script>
 
 </body>
 
